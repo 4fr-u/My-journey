@@ -1,0 +1,22 @@
+﻿@model List<fproject.Models.Guest>
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>will</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (fproject.Models.Guest g in Model)
+        {
+            <tr>
+                <td>@g.Name</td>
+                <td>@g.Email</td>
+                <td>@g.Phone</td>
+                <td>@g.WellAttend</td>
+            </tr>
+        }
+    </tbody>
+</table>

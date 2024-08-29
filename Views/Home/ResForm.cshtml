@@ -1,0 +1,36 @@
+﻿@model fproject.Models.Guest
+@{
+    ViewData["Title"] = "ResForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="bg-primary text-white text-center col-6 col-xxl-4">ResForm</h1>
+<form asp-action="ResForm" method="post">
+<div class="col-6">
+    <label asp-for="Name">Name</label>
+    <input asp-for="Name" class="form-control" />
+</div> 
+<br />
+<div class="col-6">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+</div>
+<br />
+    <div class="col-6">
+        <label asp-for="Phone">Phone</label>
+        <input asp-for="Phone" class="form-control" />
+</div>
+<br />
+    <div class="col-6">
+        <label asp-for="WellAttend">will attend?</label>
+        <select asp-for="WellAttend" class="form-control ">
+        <option value="">Choose</option>
+        <option value="true">yes</option>
+        <option value="false">no</option>
+    </select>
+</div>
+<br />
+<button type="submit" >send</button>
+
+</form>
+

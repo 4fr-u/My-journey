@@ -1,0 +1,12 @@
+﻿@model fproject.Models.Guest
+
+<h1>welcome @Model.Name</h1>
+@if (Model.WellAttend)
+{
+  @: Thank you for 
+}
+else
+{
+    @:thank you 
+}
+<p>to know who will attend click <a asp-action="ListGuest">here</a></p>
